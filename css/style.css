@@ -1,0 +1,537 @@
+/*  ----- CSS STYLE -----*/
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap&subset=latin-ext');
+
+/* 
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
+*/
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    color: #1E1E1E;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.d-flex{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flexbox;  
+}
+
+.wrap{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+
+.justify-between{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.justify-end{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+
+.align-items-center{
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+}
+
+.align-items-start{
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-flex-align: start;
+}
+
+.two-column{
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -ms-flex:0 0 50%;
+}
+
+.three-column{
+    flex: 0 0 32%;
+    -webkit-flex: 0 0 33%;
+    -moz-flex: 0 0 33%;
+    -ms-flex:0 0 33%;
+}
+
+.learn-more {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 15px 36px;
+    border: 1px solid #1E1E1E;
+}
+
+/* HEADER Style - Start*/
+header {
+    padding: 27px 0;
+}
+
+header a img {
+    display: block;
+    width: 196px;
+}
+
+header .main-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+header .main-menu li {
+    margin-left: 72px;
+}
+
+header .main-menu li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    color: #1E1E1E;
+    text-transform: capitalize;
+    line-height: 1.7rem;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+header .main-menu li a:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fccfff;
+    transition: all 0.5s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header .main-menu li a.active:after,
+header .main-menu li a:hover:after {
+    width: 100%;
+}
+/* HEADER Style - End*/
+
+
+/* MAIN Style - Start*/
+
+/* main - WELCOME - style - start*/
+.welcome {
+    padding: 180px 0 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 75px;
+}
+
+.welcome .container {
+    text-align: center;
+}
+
+.welcome .welcome-title {
+    color:white;
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+/* main - WELCOME - style - end*/
+
+/* main - TRENDS - style - start*/
+.trends {
+    margin-bottom: 151px;
+}
+
+.trends .trends-title {
+    color: #1E1E1E;
+    size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 49px;
+}
+
+.trends .trends-item {
+    position: relative;
+}
+
+.trends .trends-item-content {
+    text-align: center;
+    padding: 22px 19px 55px;
+    background-color: white;
+    position: absolute;
+    top: 164px;
+    left: 25px;
+    right: 25px;
+}
+
+.trends-item .trends-item-content .trends-date {
+    margin-bottom: 17px;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.trends-item .trends-item-content .trends-item-text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+/* main - TRENDS - style - end*/
+
+
+/* main - SERVICES - style - start*/
+.services {
+    margin-bottom: 111px;
+}
+
+.services .services-title {
+    color: #1E1E1E;
+    size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 58px;
+}
+
+.services article {
+    padding: 143px 95px 95px;
+}
+
+.services .service-img {
+    overflow: hidden;
+}
+
+.services .service-img img{
+    display: block;
+    transition: all 0.5s linear;
+}
+
+.services .service-img:hover img {
+    transform: scale(1.3);
+}
+
+.services article .service-name {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+/* main - SERVICES - style - end*/
+
+
+/* main - OWNER - style - start*/
+.owner {
+    margin-bottom: 65px;
+}
+
+.owner .owner-title {
+    color: #1E1E1E;
+    size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 54px;
+}
+
+.owner .owner-view {
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #ECD9D9;
+}
+
+.owner .owner-view .owner-image {
+    display: block;
+    width: 50%;
+    padding: 54px 95px;
+}
+
+.owner .owner-view .owner-info {
+    position: absolute;
+    left: 50%;
+    right: 190px;
+}
+
+.owner .owner-view .owner-info-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    margin-bottom: 35px;
+}
+
+.owner .owner-view .owner-info-text {
+    line-height: 2.3rem;
+}
+/* main - OWNER - style - end*/
+
+
+/* footer - style - start*/
+footer {
+    padding: 48px 0 25px;
+    text-align: center;
+}
+
+footer a:nth-of-type(2) {
+    display: inline-block;
+    margin: 0 33px;
+    margin-bottom: 19px;
+}
+
+footer a span {
+    color: rgb(247, 151, 218);
+    font-size: 2rem;
+}
+
+footer p {
+    text-align: center;
+    line-height: 4.1rem;
+    font-size: 1.2rem;
+    letter-spacing: -0.17px;
+}
+/* footer - style - end*/
+
+
+/* --- BLOG - STYLE - Start*/
+.blog-items {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.blog-items .trends-item-content .trends-date {
+    margin-bottom: 17px;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.blog-items .trends-item-content .trends-item-text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.previous-next-page {
+    text-align: center;
+}
+
+.previous-next-page a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* --- BLOG - STYLE - End*/
+
+
+
+
+
+
+/* --- BLOG - ITEM - STYLE ---  */
+
+/* blog-item - style- start*/
+.blog-item {
+    padding-top: 50px;
+}
+
+.blog-item-date {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.blog-item-date span {
+    border: 1px solid #1E1E1E;
+    margin-right: 10px;
+}
+
+.blog-item .blog-item-resime {
+    margin-bottom: 95px;
+}
+
+.blog-item .blog-item-resime .blog-item-title {
+    padding-right: 115px;
+}
+
+.blog-item-resime h1 {
+    color: #1E1E1E;
+    size: 4.4rem;
+    line-height: 5rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    margin: 0 0 26px;;
+}
+
+.blog-item-resime .blog-item-title p {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: normal;
+    text-align: justify;}
+
+.blog-item .blog-resime-title figure img {
+    display: block;
+}
+
+.sub-container {
+    width: 748px;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 125px;
+}
+
+.sub-container p:nth-of-type(3) {
+    margin-bottom: 55px;
+}
+
+.sub-container p:nth-of-type(5) {
+    margin-bottom: 40px;
+}
+
+.sub-container p:nth-of-type(6) {
+    margin-bottom: 15px;
+}
+
+.sub-container img {
+    margin-bottom: 55px;
+}
+
+.sub-container a {
+    padding: 0 13px 3px;
+    text-align: center;
+    background-color: #F5F5F5;
+    line-height: 2.7rem;
+    margin-right: 25px;
+    color: #1E1E1E;
+}
+
+/* blog-item - style- end*/
+
+
+
+/* CONTACT - Style  -START*/
+
+
+.contact-info {
+    margin-bottom: 110px;
+    padding-top: 100px;
+}
+
+.contact {
+    padding-right: 100px;
+}
+
+.contact .contact-forn-title {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group{
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group .form-element {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    line-height: 4.5rem;
+    color: black;
+    padding: 0 10px;
+    background-color: transparent;
+    border: 1px solid pink;
+}
+
+main .contact-map iframe {
+    width: 100%;
+    height: 579.8px;
+}
+
+.contact .learn-more {
+    border: none;
+    background-color: pink;
+    padding:auto 15px;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+main .phone-email {
+    background-color: #ECD9D9;
+    text-align: center;
+}
+
+main .phone-email .phone-email-info {
+    padding: 63px 0;
+}
+
+main .phone-email .phone-email-item {
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+    letter-spacing: normal;
+}
+/* CONTACT - Style  -END*/
+
+
